@@ -1,0 +1,47 @@
+# write the data types , int,floot,string,boolean,complex
+#int,float,complex
+
+a = 10          # int
+b = 12.5        # float
+c = 2 + 3j      # complex
+
+print("a =", a, "Type:", type(a))
+print("b =", b, "Type:", type(b))
+print("c =", c, "Type:", type(c))
+
+
+# string
+name = "python"
+greeting = 'hello world'
+
+print("Name;", name)
+print("Greeting:", greeting)
+print("Type:", type(name))
+
+
+#list
+fruits = ["apple", "banana", "cherry"]
+print("Fruits:", fruits)
+print("Type:", type(fruits))
+
+
+#tuple
+colors = ("red", "green", "blue")
+print("Colors:", colors)
+print("Type:", type(colors))
+
+#dictionary
+student = {"name": "Kamala", "age": 21, "course": "Python"}
+print("Student Info:", student)
+print("Type:", type(student))
+ 
+ #set
+numbers = {1, 2, 3, 4, 5}
+print("Numbers:", numbers)
+print("Type:", type(numbers))
+
+#boolean
+x = True
+y = False
+print("x:", x, "Type:", type(x))
+print("y:", y, "Type:", type(y))
