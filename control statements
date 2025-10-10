@@ -1,0 +1,49 @@
+# Wthere are classified into three types
+# 1 conditional statements
+
+        
+# if,elif,else
+  
+x = 10
+if x > 0:
+    print("Positive number")
+elif x == 0:
+    print("Zero")
+else:
+    print("Negative number")
+
+# 2 looping statements(foe,while,nasted loops)
+
+for i in range(5):
+    print(i)
+
+i = 0
+while i < 5:
+    print(i)
+    i += 1
+
+# 3 jumping statements  (break, pass, continue)
+
+# Example: Stop the loop when i == 3(break)
+for i in range(1, 6):
+    if i == 3:
+        break
+    print(i)
+
+print("Loop stopped because i became 3")
+
+# Example: Skip printing 3(contimue)
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+
+print("Skipped printing 3")
+
+# Example: Placeholder for future code(pass)
+for i in range(1, 6):
+    if i == 3:
+        pass  # Later, we might add some code here
+    print(i)
+
+print("Used pass when i was 3")
