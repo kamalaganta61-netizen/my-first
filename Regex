@@ -1,0 +1,21 @@
+# string starts with "python"
+
+import re
+
+text = "Python is easy to learn"
+
+# ^ means "starts with"
+pattern = r"^Python"
+
+if re.match(pattern, text):
+    print(" String starts with 'Python'")
+else:
+    print(" String does not start with 'Python'")
+
+# find all vowels in a string
+
+import re
+
+text = "Regular expressions in Python"
+vowels = re.findall(r'[aeiouAEIOU]', text)
+print("Vowels found:", vowels)
