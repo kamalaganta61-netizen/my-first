@@ -1,0 +1,10 @@
+# program to print only vowels from a string
+
+text = input("Enter a string: ")
+
+vowels = "aeiouAEIOU"
+
+print("vowels in the  given string are:")
+for ch in text:
+    if ch in vowels:
+        print(ch, end=" ")
