@@ -19,3 +19,55 @@ import re
 text = "Regular expressions in Python"
 vowels = re.findall(r'[aeiouAEIOU]', text)
 print("Vowels found:", vowels)
+
+
+#'\d'- digit
+#'\w'- word
+#'\n'- exception charecter
+#'t'- tab
+
+# regular expression functions:
+
+# 1 re.match()
+
+import re
+text = "Hello python"
+result = re.match("Hello",text)
+print(result)        # match  found at be
+
+# 2 re.search()
+
+import re
+text = "I love Python"
+result = re.search("Python", text)
+print(result)      # Match found anywhere in the string
+
+# 3 re.findall()
+
+import re
+text = "My number is 12345"
+print(re.findall("\d", text))   # ['1','2','3','4','5']
+
+# 4 re.sub()
+
+import re
+text = "I like cats"
+print(re.sub("cats", "dogs", text))  # I like dogs
+
+# 5 re.split()
+
+import re
+text = "apple,banana,orange"
+print(re.split(",", text))   # ['apple','banana','orange']
+
+# 6 re.compile()
+
+import re
+pattern = re.compile("\d+")
+print(pattern.findall("12 apples, 5 oranges"))  # ['12','5']
+
+# 7 re.fullmatch()
+
+import re
+print(re.fullmatch("\d+", "12345"))   # Matches (only digits)
+print(re.fullmatch("\d+", "123a5"))   # No match
