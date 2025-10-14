@@ -1,0 +1,26 @@
+# Fibonacci series is a sequence of numbers where:
+
+# Each number = sum of the previous two numbers
+
+# Example 1 : using recusion
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+    
+
+terms = int(input("Enter number of the terms: "))
+print("fibonacci series:")
+for i in range(terms):
+    print(fibonacci(i), end=" ")
+
+#Example 2 :using loop (Iterative method)
+
+n = int(input("Enter number of terms: "))
+a, b = 0 , 1
+
+print("fibonacci series:")
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
