@@ -1,0 +1,26 @@
+# Class is a blue print
+# The object is the base class in python
+# python costruvctor is deined with __ int __()
+
+class student:
+    def __init__(self, name, age, grade):
+        self.name = name       # instace variable
+        self.age = age
+        self.grade = grade
+
+    def display_info(self):
+        print("Name:", self.name)
+        print("Print", self.age)
+        print("Grade", self.grade)
+
+# creating objects of student class
+student1 = student("Kamala", 20, "A")
+student2 = student("sandy", 22, "B")
+student3 = student("michel", 15, "C")
+
+# Calling methods
+student1.display_info()
+print("------------")
+student2.display_info()
+print("----------")
+student3.display_info()
