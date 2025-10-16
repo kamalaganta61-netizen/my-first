@@ -24,4 +24,3 @@ print("------------")
 student2.display_info()
 print("----------")
 student3.display_info()
-

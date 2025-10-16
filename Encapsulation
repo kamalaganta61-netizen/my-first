@@ -1,0 +1,25 @@
+class Student:
+    def __init__(self, name, marks):
+        self.__name = name      # private variable
+        self.__marks = marks    # private variable
+
+    # getter method
+    def get_marks(self):
+        return self.__marks
+
+    # setter method
+    def set_marks(self, marks):
+        if 0 <= marks <= 100:
+            self.__marks = marks
+        else:
+            print("Invalid marks! Must be between 0 and 100.")
+
+# create object
+s1 = Student("Ravi", 85)
+
+# access private variable using getter
+print("Marks:", s1.get_marks())
+
+# modify marks using setter
+s1.set_marks(95)
+print("Updated Marks:", s1.get_marks())

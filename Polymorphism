@@ -1,0 +1,13 @@
+# POLYMORPHISM means "many forms" __same function name but different behaviour.
+# multiple forms or more then one form.
+
+class Bird:
+    def sound(self):
+        print("chirp")
+
+class Dog:
+    def sound(self):
+        print("Bark")
+
+for animal in (Bird(), Dog()):
+    animal.sound()
