@@ -1,0 +1,43 @@
+# 1. Method Overloading:
+
+# Method overloading : Method overloading means having multiple methods with the same name but different number or type of parameters in the same class.
+
+class A :
+    def sum(self,a,b):
+        return a + b
+    def suma(self,a,b):
+        return a + b + c
+    
+obj = A()
+print(obj.sum(1,2))
+
+# Example : Simulated Overloading using Default Arguments:
+class Calculator:
+    def add(self, a=None, b=None, c=None):
+        if a is not None and b is not None and c is not None:
+            return a + b + c
+        elif a is not None and b is not None:
+            return a + b
+        else:
+            return a
+
+calc = Calculator()
+print(calc.add(10, 20))      
+print(calc.add(10, 20, 30))  
+print(calc.add(5))           
+
+
+# 2. Method Overriding :
+# Method overriding means a child class defines a method with the same name as a method in its parent class, replacing its behavior.
+# Same method name in parent and child classes.
+
+class A :
+    def display(self):
+        print("this is class A")
+
+class B(A):
+    def display(self):
+        print ("this is class B")
+        super().display()
+obj = B()
+obj . display()

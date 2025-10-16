@@ -1,0 +1,96 @@
+# Inheritance:
+
+# It allows a child class (subclass) to use the properties and methods of a parent class (superclass).
+
+# Four types of inheritance; 1.single , 2.multilevel , 3.multiple , 4. hierarchiel.
+
+# 1.Single Inheritance: One parent → one child
+
+# Parent class
+class Animal:
+    def speak(self):
+        return "Animal speaks"
+
+# Child class
+class Dog(Animal):
+    def bark(self):
+        return "Dog barks"
+
+# Create object of child class
+d = Dog()
+print(d.speak())  
+print(d.bark())   
+
+# 2. Multiple Inheritance: One child → multiple parents
+# two parent classes and one child class.
+
+class Father:
+    def skills(self):
+        return "Driving, Cooking"
+
+class Mother:
+    def skills(self):
+        return "Singing, Dancing"
+
+class Child(Father, Mother):
+    def skills(self):
+        return Father.skills(self) + ", " + Mother.skills(self) + ", Python Programming"
+
+c = Child()
+print(c.skills())
+
+# 3.Multilevel Inheritance:Grandparent → Parent → Child
+class Grandfather:
+    def property(self):
+        return "Land"
+
+class Father(Grandfather):
+    def house(self):
+        return "House"
+
+class Son(Father):
+    def car(self):
+        return "Car"
+
+s = Son()
+print(s.property())  # From Grandfather
+print(s.house())     # From Father
+print(s.car())       # From Son
+
+
+# 4.Hierarchical Inheritance:One parent → multiple children
+# Parent class
+class Animal:
+    def speak(self):
+        return "Animals can make sounds"
+
+# Child class 1
+class Dog(Animal):
+    def sound(self):
+        return "Dog barks"
+
+# Child class 2
+class Cat(Animal):
+    def sound(self):
+        return "Cat meows"
+
+# Child class 3
+class Cow(Animal):
+    def sound(self):
+        return "Cow moos"
+
+# Create objects of child classes
+dog = Dog()
+cat = Cat()
+cow = Cow()
+
+# Accessing methods
+print(dog.speak())   # Inherited from Animal
+print(dog.sound())   # From Dog
+
+print(cat.speak())   # Inherited from Animal
+print(cat.sound())   # From Cat
+
+print(cow.speak())   # Inherited from Animal
+print(cow.sound())   # From Cow
+

@@ -1,0 +1,26 @@
+# abstraction means hiding unnecessary datails from the user and showing only the essential features.
+
+from abc import ABC, abstractmethod
+
+# Abstract class
+class Payment(ABC):
+
+    @abstractmethod
+    def payment_method(self):
+        pass
+
+# Derived classes
+class CreditCardPayment(Payment):
+    def payment_method(self):
+        return "Payment done using Credit Card"
+
+class PayPalPayment(Payment):
+    def payment_method(self):
+        return "Payment done using PayPal"
+
+# Creating objects
+p1 = CreditCardPayment()
+p2 = PayPalPayment()
+
+print(p1.payment_method())
+print(p2.payment_method())
