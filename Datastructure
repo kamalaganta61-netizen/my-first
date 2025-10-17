@@ -1,0 +1,39 @@
+# Data Structures
+# LIST,TUPLE,SET,DICTIONARY
+
+#LIST:
+# Syntax: list_name = [item1, item2, item3]
+
+# Can store different data types.
+
+fruits = ["apple", "banana", "cherry"]
+fruits.append("mango")     # Add element
+fruits.remove("banana")    # Remove element
+print(fruits)
+
+# 2. Tuple
+
+# Syntax: tuple_name = (item1, item2, item3)
+# Cannot modify elements.
+
+numbers = (10, 20, 30)
+print(numbers[1])  # Accessing element
+
+# 3. Set
+
+# Syntax: set_name = {item1, item2, item3}
+#No duplicate elements, unordered.
+
+colors = {"red", "green", "blue"}
+colors.add("yellow")
+print(colors)
+
+#4. Dictionary
+
+# Syntax: dict_name = {key: value}
+# Stores data in key-value pairs.
+
+student = {"name": "RAJU", "age": 20, "course": "Python"}
+print(student["name"])
+student["age"] = 21  # Update value
+
