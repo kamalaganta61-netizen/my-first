@@ -1,0 +1,27 @@
+# import statement is used to bring ecternal modules or packages into your python program.
+
+# IMPORT:
+# Built-in modules (like math, os, datetime)
+# Your own custom modules
+
+# MATH Module:
+import math
+
+class circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return math.pi * math.pow(self.radius, 2)
+
+    def circumference(self):
+        return 2 * math.pi * self.radius
+
+# Create object
+c1  = circle(5)
+
+print("area of cirle:", c1.area())
+print("circumference of circle:", c1.circumference())
+
+
+

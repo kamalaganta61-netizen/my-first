@@ -1,0 +1,38 @@
+# INSTANCE VARIABLE AND STATIC VARIABLE
+# INSTANCE VARIABLE:
+# an instance variable is a variable that belongs to a specific object(instance) of a class.
+class student:
+    def __init__(self, name, age):
+        self.name = name         # instance variable
+        self.age = age           # instance variable
+
+# create two objects 
+s1 = student("NANDIRAJU", 40)
+s2 = student("SUJATHA", 35)
+
+print(s1.name,s1.age)
+print(s2.name, s2.age)
+
+
+# STATIC VARIABLE:
+# a static variable is shared by all abjects of the class.
+# it belongs to the class itself, not to any one object.
+class student:
+    college_name = "ABC college"      # static variable
+
+    def __init__(self, name, age):
+        self.name = name                # static variable
+        self.age = age
+
+# Create two objects
+s1 = student("NANDIRAJU", 40)
+s2 = student("sujatha", 35)        
+
+print(s1.college_name)
+print(s2.college_name)
+
+
+student.college_name = "XYZ University"
+
+print(s1.college_name)
+print(s2.college_name)
