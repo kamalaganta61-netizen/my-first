@@ -1,0 +1,17 @@
+# A constructor  is a special method in a class that is automatically 
+# In Python, the constructor method is defined using __init__().
+
+class student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def  display(self):
+        print("Name:", self.name)
+        print("Age:", self.age)
+
+
+# crreating object
+s1 = student("kamala", 21)
+s1.display()
+
